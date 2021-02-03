@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bootstrap 4 -Dropdown</title>
+
+    <!---CSS Files-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/mdb.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="height: 1800px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white sticky-top">
+      <a class="navbar-brand text-center" href="#">Dropdown</a>
+    </nav>
+                     <!---start -->
+        <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Basic Dropdown</h2>
+        <div class="container">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Basic Dropdown</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">item 1</a>
+                              <a href="#" class="dropdown-item">item 2</a>
+                              <a href="#" class="dropdown-item">item 3</a>
+                              <a href="#" class="dropdown-item">item 4</a>
+                         </div>
+                </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">dropdown-divider</h2>
+        <div class="container">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Dropdown-divider</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">item 1</a>
+                              <a href="#" class="dropdown-item">item 2</a>
+                              <a href="#" class="dropdown-item">item 3</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#" class="dropdown-item">item 4</a>
+                         </div>
+                </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">dropdown-header</h2>
+        <div class="container">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Dropdown-header</button>
+                         <div class="dropdown-menu">
+                           <div class="dropdown-header">header</div>
+                              <a href="#" class="dropdown-item">item 1</a>
+                              <a href="#" class="dropdown-item">item 2</a>
+                              <a href="#" class="dropdown-item">item 3</a>
+                              <a href="#" class="dropdown-item">item 4</a>
+                         </div>
+                </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">dropdown-item-text</h2>
+        <div class="container">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">dropdown-item-text</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">item 1</a>
+                              <a href="#" class="dropdown-item">item 2</a>
+                              <a href="#" class="dropdown-item">item 3</a>
+                              <a href="#" class="dropdown-item-text">item text</a>
+                              <span class="dropdown-item-text">Just Text</span>
+                         </div>
+                </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">dropdown -active/disable</h2>
+        <div class="container">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Dropdown</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item active">Active</a>
+                              <a href="#" class="dropdown-item ">Normal2</a>
+                              <a href="#" class="dropdown-item disabled">Disabled</a>
+                         </div>
+                </div>
+        </div>
+       
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">dropleft /dropright</h2>
+        <div class="container">
+          <div class="clearfix">
+                <div class="dropleft float-right">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">dropleft</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item ">Item 1</a>
+                              <a href="#" class="dropdown-item ">Item 2</a>
+                              <a href="#" class="dropdown-item ">Item 3</a>
+                         </div>
+                </div>
+                <div class="dropright float-left">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">dropright</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item ">Item 1</a>
+                              <a href="#" class="dropdown-item ">Item 2</a>
+                              <a href="#" class="dropdown-item ">Item 3</a>
+                         </div>
+                </div>
+              </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">.dropdown-menu-right /.dropup/.dropdown-item-text </h2>
+        <div class="container">
+          <div class="clearfix">
+                <div class="dropdown">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown"> wide range dropdown to explain dropdown-menu-right</button>
+                         <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#" class="dropdown-item ">Item 1</a>
+                              <a href="#" class="dropdown-item ">Item 2</a>
+                              <a href="#" class="dropdown-item ">Item 3</a>
+                         </div>
+                </div>
+                <div class="dropdown float-right">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown"> wide range dropdown to explain dropdown-menu-left</button>
+                         <div class="dropdown-menu dropdown-menu-left">
+                              <a href="#" class="dropdown-item ">Item 1</a>
+                              <a href="#" class="dropdown-item ">Item 2</a>
+                              <a href="#" class="dropdown-item ">Item 3</a>
+                         </div>
+                </div>
+                <br>
+                <div class="dropup">
+                  <button type="button" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">dropup</button>
+                         <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item ">Item 1</a>
+                              <a href="#" class="dropdown-item ">Item 2</a>
+                              <a href="#" class="dropdown-item ">Item 3</a>
+                         </div>
+                </div>
+
+              </div>
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">Grouped Buttons with a Dropdown </h2>
+        <div class="container">
+                  <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Button 1</button>
+                        <button type="button" class="btn btn-secondary">Button 2</button>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                          Button 3
+                        </button>
+                              <div  class="dropdown-menu">
+                                  <a href="#" class="dropdown-item">Item 1</a>
+                                  <a href="#" class="dropdown-item">Item 2</a>
+                                  <a href="#" class="dropdown-item">Item 3</a>
+
+                              </div>
+                      </div>
+                  </div>
+        </div>
+
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">Split Button Dropdowns</h2>
+        <div class="container">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+            </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-warning">warning</button>
+              <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+              </div>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger">danger</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                </div>
+                </div>
+
+                <div class="btn-group-vertical">
+                  <button type="button" class="btn btn-danger">Apple</button>
+                  <button type="button" class="btn btn-primary">Samsung</button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                       Sony
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Tablet</a>
+                      <a class="dropdown-item" href="#">Smartphone</a>
+                    </div>
+                  </div>  
+                </div>  
+        </div>
+
+        <hr class="bg-danger">
+        <h2 class="bg-warning text-center text-white mx-auto w-20 rounded mt-3 p-2 font-italic">Dropdown-events</h2>
+        <div class="dropdown" id="dropdown">
+          <button type="button" id="dropdownItem" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+
+                      <!--end----->
+    <!----Bootsrap Js Files--->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/popper.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/mdb.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function(){
+        $("#dropdownItem").dropdown();
+        $("#dropdown").on("show.bs.dropdown", function(event){
+          alert("You clicked on: show.bs.dropdown ");
+        });
+        $("#dropdown").on("shown.bs.dropdown", function(event){
+          alert("You clicked on: shown.bs.dropdown ");
+        });
+        $("#dropdown").on("hide.bs.dropdown", function(event){
+          alert("You clicked on: hide.bs.dropdown ");
+        });
+        $("#dropdown").on("hidden.bs.dropdown", function(event){
+          alert("You clicked on: hidden.bs.dropdown ");
+        });
+      });
+      </script>
+  </body>
+</html>

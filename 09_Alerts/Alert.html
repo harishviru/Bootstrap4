@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bootstrap 4 -Alert</title>
+
+    <!---CSS Files-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/mdb.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color sticky-top">
+        <a class="navbar-brand text-center" href="#">Alert</a>
+      </nav>
+    
+                   <!---start -->
+
+     <p class="h2 bg-success text-center text-white rounded m-3">Alert</p>
+        <div class="container">
+              <div class="alert alert-primary">
+                alert-primary
+              </div> 
+              <div class="alert alert-success">
+                 alert-success
+              </div>    
+              <div class="alert alert-info">
+                alert-info
+              </div>   
+              <div class="alert alert-warning">
+                alert-warning
+              </div> 
+             <div class="alert alert-danger">
+               alert-danger
+             </div> 
+             <div class="alert alert-secondary">
+                alert-secondary
+            </div> 
+            <div class="alert alert-dark">
+                alert-dark
+           </div>
+            <div class="alert alert-light">
+                alert-light
+           </div>
+        </div>  
+        
+        
+        <hr>
+ 
+        <p class="h2 bg-success text-center text-white rounded m-3">Alert with Link</p>
+        <div class="container">
+              <div class="alert alert-primary">
+                alert-primary <a href="#" class="alert-link">link</a>
+              </div> 
+              <div class="alert alert-success">
+                 alert-success  <a href="#" class="alert-link">link</a>
+              </div>    
+              <div class="alert alert-info">
+                alert-info  <a href="#" class="alert-link">link</a>
+              </div>   
+              <div class="alert alert-warning">
+                alert-warning  <a href="#" class="alert-link">link</a>
+              </div> 
+             <div class="alert alert-danger">
+               alert-danger  <a href="#" class="alert-link">link</a>
+             </div> 
+             <div class="alert alert-secondary">
+                alert-secondary  <a href="#" class="alert-link">link</a>
+            </div> 
+            <div class="alert alert-dark">
+                alert-dark  <a href="#" class="alert-link">link</a>
+           </div>
+            <div class="alert alert-light">
+                alert-light  <a href="#" class="alert-link">link</a>
+           </div>
+        </div>  
+
+        <hr>
+ 
+        <p class="h2 bg-success text-center text-white rounded m-3">Alert with close </p>
+        <div class="container">
+              <div class="alert alert-primary alert-dismissible">
+                   <button type="button" class="close"  data-dismiss="alert" >&times;</button>
+                alert-primary <a href="#" class="alert-link">link</a>
+              </div> 
+              <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                 alert-success  <a href="#" class="alert-link">link</a>
+              </div>    
+              <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                alert-info  <a href="#" class="alert-link">link</a>
+              </div>   
+              <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                alert-warning  <a href="#" class="alert-link">link</a>
+              </div> 
+             <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+               alert-danger  <a href="#" class="alert-link">link</a>
+             </div> 
+             <div class="alert alert-secondary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                alert-secondary  <a href="#" class="alert-link">link</a>
+            </div> 
+            <div class="alert alert-dark alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                alert-dark  <a href="#" class="alert-link">link</a>
+           </div>
+            <div class="alert alert-light alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                alert-light  <a href="#" class="alert-link">link</a>
+           </div>
+        </div>  
+        <hr>
+
+        <p class="h2 bg-success text-center text-white rounded m-3">Alert with fade show </p>
+        <div class="alert alert-warning alert-dismissible fade show">
+            <h4 class="alert-heading"> Alert Heading</h4>
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            alert-Warning  <a href="#" class="alert-link">link</a>
+       </div>
+
+       <hr>
+       <p class="h2 bg-success text-center text-white rounded m-3">Alert Events</p>
+       <div class="alert alert-danger alert-dismissible" id="myAlert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          alert-danger  <a href="#" class="alert-link">link</a>
+       </div>
+
+                      <!--end----->
+    <!----Bootsrap Js Files--->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/popper.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/mdb.js" type="text/javascript"></script>
+</body>
+<script>
+    $(document).ready(function(){
+      $(".close").click(function(){
+        $("#myAlert").alert("close");
+      });
+      $("#myAlert").on('close.bs.alert', function(){
+        alert('The alert message is about to be closed.');
+      });
+      $("#myAlert").on('closed.bs.alert', function(){
+        alert('The alert message is closed.');
+      });
+    });
+    </script>  
+</html>

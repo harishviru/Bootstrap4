@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bootstrap 4 -Navs</title>
+
+    <!---CSS Files-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/mdb.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="height: 1800px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white sticky-top">
+      <a class="navbar-brand text-center" href="#">Navs</a>
+    </nav>
+
+                     <!---start -->
+     <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic"> Basic Navs</h2>
+               <div class="container">
+                    <div class="nav border border-light">
+                           <div class="nav-item">
+                                  <a href="#" class="nav-link">Home</a>
+                           </div>
+                           <div class="nav-item">
+                                 <a href="#" class="nav-link">Contact</a>
+                          </div>
+                          <div class="nav-item">
+                            <a href="#" class="nav-link">Gallery</a>
+                          </div>
+                    </div>
+               </div>
+
+        <div class="container mt-3 ">
+            <nav class="nav border border-light">
+                 <div class="nav-item">
+                       <a href="#" class="nav-link active">Menu 1</a>
+                 </div>
+                 <div class="nav-item">
+                    <a href="#" class="nav-link">Menu 2</a>
+                </div>
+                <div class="nav-item">
+                  <a href="#" class="nav-link disabled">Menu 3</a>
+                </div>
+            </nav>
+        </div>
+
+   <hr>
+        <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Alignment /Vertical Navs</h2>
+
+        <div class="container border border-light m-3">
+             <p>Left Alignment Nav</p>
+            <ul class="nav">
+                 <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li> 
+                 <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                 <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                </ul>
+
+                <p class="text-center">Center Alignment Nav</p>
+                <ul class="nav justify-content-center">
+                     <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li> 
+                     <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                     <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                    </ul>
+                    <p class="text-right">Right Alignment Nav</p>
+                    <ul class="nav justify-content-end">
+                         <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li> 
+                         <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                         <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                </ul>
+       </div>
+
+       <div class="container border border-light m-3">
+            <p>Vertical Alignment Nav</p>
+           <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li> 
+               </ul>
+         </div>
+ 
+         <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic"> Navs Tabs <small class="text-muted">With Dropdowns ,Toggleable / Dynamic Tabs</small></h2>
+           
+         <div class="container border border-light mt-3">
+             <p class="h5 text-primary font-weight-bold">  Nav tabs</p>     
+            <div class="nav nav-tabs">
+                         <div class="nav-item">
+                             <a href="#" class="nav-link active">Link1</a>
+                         </div>   
+                         <div class="nav-item">
+                            <a href="#" class="nav-link">Link2</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#" class="nav-link disabled">Link3</a>
+                        </div> 
+                 </div>
+         </div>
+
+         <div class="container border border-light mt-3">
+            <p class="h5 text-primary font-weight-bold">  Nav tabs-> nav-justified</p>     
+            <div class="nav nav-tabs nav-justified">
+                    <div class="nav-item">
+                        <a href="#" class="nav-link active">Active</a>
+                    </div>   
+                    <div class="nav-item">
+                       <a href="#" class="nav-link">Link</a>
+                   </div>
+                   <div class="nav-item">
+                       <a href="#" class="nav-link disabled">Disabled</a>
+                   </div> 
+            </div>
+    </div>
+
+    <div class="container border border-light mt-3">
+        <p class="h5 text-primary font-weight-bold">  Nav tabs->Dropdown</p>     
+        <div class="nav nav-tabs">
+                <div class="nav-item">
+                    <a href="#" class="nav-link active">Active</a>
+                </div>   
+                <div class="nav-item dropdown">
+                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Normal</a>
+                   <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Item 1</a>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                   </div>
+               </div>
+               <div class="nav-item">
+                   <a href="#" class="nav-link disabled">Link3</a>
+               </div> 
+        </div>
+</div>
+
+<div class="container mt-3">
+    <p class="h5 text-primary font-weight-bold">#Toggleable / Dynamic Tabs</p>     
+      <ul class="nav nav-tabs">
+         <li class="nav-item">
+             <a class="nav-link active" data-toggle="tab" href="#link1">Link1</a>
+         </li>   
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#link2">Link2</a>
+         </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#link3">Link3</a>
+        </li>         
+    </ul>
+
+ <div class="tab-content">
+    <div class="container tab-pane active" id="link1">
+       <p>link1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+    </div>
+    <div class="container tab-pane " id="link2">
+      <p> link2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+   </div>
+   <div class="container tab-pane fade" id="link3">
+      <p>link3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+   </div>
+</div>
+</div>
+
+<hr>
+<h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic"> Navs Pills <small class="text-muted">With Dropdowns ,Toggleable / Dynamic Tabs Pills</small></h2>
+           
+<div class="container border border-light mt-3">
+    <p class="h5 text-primary font-weight-bold">  Nav Pills</p>     
+   <div class="nav nav-pills">
+                <div class="nav-item">
+                    <a href="#" class="nav-link active">Link1</a>
+                </div>   
+                <div class="nav-item">
+                   <a href="#" class="nav-link">Link2</a>
+               </div>
+               <div class="nav-item">
+                   <a href="#" class="nav-link disabled">Link3</a>
+               </div> 
+        </div>
+</div>
+
+<div class="container border border-light mt-3">
+    <p class="h5 text-primary font-weight-bold">  Nav tabs_Pills-> nav-justified</p>     
+    <div class="nav nav-pills nav-justified">
+            <div class="nav-item">
+                <a href="#" class="nav-link active">Active</a>
+            </div>   
+            <div class="nav-item">
+               <a href="#" class="nav-link">Link</a>
+           </div>
+           <div class="nav-item">
+               <a href="#" class="nav-link disabled">Disabled</a>
+           </div> 
+    </div>
+</div>
+
+<div class="container border border-light mt-3">
+    <p class="h5 text-primary font-weight-bold">  Nav Pills->Dropdown</p>     
+    <div class="nav nav-pills">
+            <div class="nav-item">
+                <a href="#" class="nav-link active">Active</a>
+            </div>   
+            <div class="nav-item dropdown">
+               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Normal</a>
+               <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Item 1</a>
+                <a href="#" class="dropdown-item">Item 2</a>
+                <a href="#" class="dropdown-item">Item 3</a>
+               </div>
+           </div>
+           <div class="nav-item">
+               <a href="#" class="nav-link disabled">Link3</a>
+           </div> 
+    </div>
+</div>
+
+<div class="container mt-3">
+    <p class="h5 text-primary font-weight-bold">#Toggleable / Dynamic Tabs</p>     
+      <ul class="nav nav-pills">
+         <li class="nav-item">
+             <a class="nav-link active" data-toggle="tab" href="#link4">Link1</a>
+         </li>   
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#link5">Link2</a>
+         </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#link6">Link3</a>
+        </li>         
+    </ul>
+
+ <div class="tab-content">
+    <div class="container tab-pane active" id="link4">
+       <p>link1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+    </div>
+    <div class="container tab-pane " id="link5">
+      <p> link2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+   </div>
+   <div class="container tab-pane fade" id="link6">
+      <p>link3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iure tenetur veritatis, vitae eos eum, laboriosam tempore quas dolorem nulla necessitatibus. Voluptates, quia obcaecati? Consequuntur odio voluptate quas harum ex?</p>
+   </div>
+</div>
+</div>
+
+
+                      <!--end----->
+    <!----Bootsrap Js Files--->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/popper.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/mdb.js" type="text/javascript"></script>
+  </body>
+</html>

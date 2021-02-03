@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bootstrap 4 -Card</title>
+
+    <!---CSS Files-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/mdb.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white sticky-top">
+      <a class="navbar-brand text-center" href="#">Template</a>
+    </nav>
+
+                     <!---start -->
+     <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Basic Card</h2>
+    <div class="container">
+      <div class="card">
+            <div class="card-header">Card header</div>
+            <div class="card-body">Card body</div>
+            <div class="card-footer">Card footer</div>
+      </div> 
+    </div> 
+
+    <hr class="bg-danger">
+    <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Card with titles,text,links</h2>
+    <div class="container">
+      <div class="card">
+            <div class="card-header">Card header</div>
+            <div class="card-body"> Card body
+                 <h4 class="card-title">Card title</h4>
+                 <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> 
+                 <a href="#" class="card-link">Link 1</a>
+                 <a href="#" class="card-link">Link 2</a>
+            </div>
+            <div class="card-footer">Card footer</div>
+      </div> 
+    </div>
+
+
+    <hr class="bg-danger">
+    <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Card Images ,Stretched Link</h2>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+      <div class="card">
+         <div class="card-header text-muted bg-transparent"> stretched-link Used in these card</div>
+            <img class="card-img-top" alt="card-image" src="images/img_avatar1.png">
+            <div class="card-body"> Card body
+                 <h4 class="card-title text-warning">Card title</h4>
+                 <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> 
+                 <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                </div>
+      </div>
+    </div>
+   
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header text-muted bg-transparent"> card-img-bottom Used in these card</div>
+
+            <div class="card-body"> Card body
+                 <h4 class="card-title text-warning">Card title</h4>
+                 <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> 
+                 <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+                <img class="card-img-bottom" alt="card-image" src="images/img_avatar1.png">
+      </div>
+    </div>
+    
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header text-muted bg-transparent"> card-img-top Used in these card</div>
+            <img class="card-img-top" alt="card-image" src="images/img_avatar1.png">
+            <div class="card-body card-img-overlay"> Card body
+                 <h4 class="card-title text-warning">Card title</h4>
+                 <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p> 
+                 <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+      </div>
+    </div>
+   </div> 
+  </div>
+
+  <hr class="bg-danger">
+  <h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Card Columns</h2>
+ <div class="container"> 
+  <div class="card-columns">
+           <div class="card bg-primary">
+                     <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                     </div>
+           </div>
+           <div class="card bg-success">
+                  <div class="card-body text-center">
+                     <p class="card-text">Some text inside the second card</p>
+                   </div>
+          </div>
+           <div class="card bg-info">
+                  <div class="card-body text-center">
+                     <p class="card-text">Some text inside the third card</p>
+                   </div>
+          </div>
+          <div class="card bg-warning">
+            <div class="card-body text-center">
+               <p class="card-text">Some text inside the fourth card</p>
+             </div>
+          </div>
+          <div class="card bg-danger">
+            <div class="card-body text-center">
+               <p class="card-text">Some text inside the fiveth card</p>
+             </div>
+          </div>
+          <div class="card bg-secondary">
+            <div class="card-body text-center">
+               <p class="card-text">Some text inside the sixth card</p>
+             </div>
+          </div>
+ </div>
+</div>
+
+<hr class="bg-danger">
+<h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Card Deck <small class="font-italic text-muted">equal height and width</small></h2>
+<div class="container"> 
+<div class="card-deck">
+         <div class="card bg-primary">
+                   <div class="card-body text-center">
+                    <p class="card-text">Some text inside the first card</p>
+                   </div>
+         </div>
+         <div class="card bg-success">
+                <div class="card-body text-center">
+                   <p class="card-text">Some text inside the second card</p>
+                 </div>
+        </div>
+         <div class="card bg-info">
+                <div class="card-body text-center">
+                   <p class="card-text">Some text inside the third card</p>
+                 </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the fourth card</p>
+           </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the fiveth card</p>
+           </div>
+        </div>
+        <div class="card bg-secondary">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the sixth card</p>
+           </div>
+        </div>
+</div>
+</div>
+
+
+<hr class="bg-danger">
+<h2 class="bg-warning text-center text-white mx-auto w-50 rounded mt-3 p-2 font-italic">Card Group <small class="font-italic text-muted">removes left and right margins between each card</small></h2>
+<div class="container"> 
+<div class="card-group">
+         <div class="card bg-primary">
+                   <div class="card-body text-center">
+                    <p class="card-text">Some text inside the first card</p>
+                   </div>
+         </div>
+         <div class="card bg-success">
+                <div class="card-body text-center">
+                   <p class="card-text">Some text inside the second card</p>
+                 </div>
+        </div>
+         <div class="card bg-info">
+                <div class="card-body text-center">
+                   <p class="card-text">Some text inside the third card</p>
+                 </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the fourth card</p>
+           </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the fiveth card</p>
+           </div>
+        </div>
+        <div class="card bg-secondary">
+          <div class="card-body text-center">
+             <p class="card-text">Some text inside the sixth card</p>
+           </div>
+        </div>
+</div>
+</div>
+
+
+
+
+                      <!--end----->
+    <!----Bootsrap Js Files--->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/popper.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/mdb.js" type="text/javascript"></script>
+  </body>
+</html>

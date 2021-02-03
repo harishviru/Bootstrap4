@@ -1,0 +1,32 @@
+.Bootstrap 4 Navigation Bar
+---------------------------
+.A navigation bar is a navigation header that is placed at the top of the page.
+
+.navbar 
+.navbar-expand
+.navbar-expand-xl|lg|md|sm
+.navbar-nav
+.nav-item
+.nav-link
+
+.navbar-dark 
+.navbar-light
+.navbar-brand 
+.navbar-text  
+
+#Navbar With Dropdown
+#Collapsing The Navigation Bar
+.navbar-toggler
+.data-toggle="collapse"
+.data-target="#thetarget"
+.navbar-toggler-icon
+
+.collapse 
+.navbar-collapse
+
+#Navbar Forms and Buttons
+
+#Position With Navigation Bar
+.fixed-top
+.fixed-bottom
+.sticky-top
